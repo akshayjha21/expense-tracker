@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>EXPENSE TRACKER</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>EXPENSE TRACKER</h1>
+            <form id="expense-form">
+                <input
+                 type="text" 
+                 id="expense-name" 
+                 placeholder="Expense" 
+                 required/>
+                <input type="number" 
+                id="expense-amount" 
+                placeholder="Amount"
+                required/>
+                <button id="add-el-bttn" type="submit">Add expence</button>
+            </form>
+            <h1>Expenses</h1>
+            <ul id="expense-list">
+            </ul>
+            <div id="total">
+                <h3>Total $<span id="total-amount">0.00</span></h3>
+            </div>
+            
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
